@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*
+ * css reset
+ * chenxubun20170821
+ */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,textarea,p,th,td,i {padding: 0;margin: 0;}
+table {border-collapse: collapse;border-spacing: 0;}
+address,caption,cite,code,dfn,em,strong,th,var,i {font-weight: normal;font-style: normal;}
+ol,ul {list-style: none;}
+h1,h2,h3,h4,h5,h6,b {font-weight: normal;}
+h1 {font-size: 20px;}
+h2 {font-size: 16px;}
+h3 {font-size: 14px;}
+a {text-decoration: none;color: #333;}
+
+/*定义body字体和默认的字体大小*/
+body {color:#333;font-family: "Microsoft YaHei", Verdana, Arial, sans-serif, "宋体";font-size: 14px;line-height: 1.42857143;}
+
+/* 定义图片边框，当图片作为链接内容被填充时，会有默认边框出现，重定义掉 */
+img {border: none;max-width: 100%}
+
+/* 标签属性，textarea,input 强制输入时内容超出时换行 */
+textarea,input {word-wrap: break-word;word-break: break-all;padding: 0px;font-family: "Microsoft YaHei", Verdana, Arial, sans-serif, "宋体";}
+
+/*定义字体size*/
+.fs12{font-size: 12px;}
+.fs14{font-size: 14px;}
+.fs16{font-size: 16px;}
+.fs18{font-size: 18px;}
+.fs20{font-size: 20px;}
+.fs22{font-size: 22px;}
+.fs24{font-size: 24px;}
+.fs26{font-size: 26px;}
+.fs28{font-size: 28px;}
+.fs30{font-size: 30px;}
+.fs32{font-size: 32px;}
+.fs36{font-size: 36px;}

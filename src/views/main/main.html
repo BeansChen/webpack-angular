@@ -1,0 +1,52 @@
+<div class="homePage">
+	<!--start @header-->
+	<header class="main-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p>bean's Blog</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--end @header-->
+	<!--start @navbar-->
+	<nav class="main-navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+                 <span class="sr-only">Toggle navigation</span>
+				<i class="glyphicon glyphicon-menu-hamburger"></i>
+				</span>
+			</div>
+			<div class="collapse navbar-collapse" id="main-menu">
+				<ul class="menu">
+					<li role="presentation" ui-sref-active="nav-current">
+						<a ui-sref="main.homePage">首页</a>
+					</li>
+					<li role="presentation" ui-sref-active="nav-current">
+						<a ui-sref="main.technology">技术分享</a>
+					</li>
+					<li role="presentation" ui-sref-active="nav-current">
+						<a  ui-sref="main.archive">个人归档</a>
+					</li>
+					<li role="presentation" ui-sref-active="nav-current">
+						<a  ui-sref="main.leaveMessage">给我留言</a>
+					</li>
+					<li role="presentation" ui-sref-active="nav-current">
+						<a ui-sref="main.aboutMe">关于我</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--end @navbar-->
+	<!--start @main-->
+	<div class="main-wrapper">
+		<div class="container">
+			<ui-view></ui-view>
+
+		</div>
+	</div>
+	<!--end @main-->
+</div>
