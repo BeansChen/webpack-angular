@@ -3,7 +3,6 @@ module.exports = function(Starter, Angular) {
 		$locationProvider.hashPrefix('');
 		$urlRouterProvider.otherwise('/main');
 		$stateProvider
-			.state('login', require('../views/login/loginRoute.js')(Angular))
 			.state('main', require('../views/main/mainRoute.js')(Angular))
 			.state('main.homePage', require('../views/homePage/homePageRoute.js')(Angular))
 			.state('main.technology', require('../views/technology/technologyRoute.js')(Angular))
