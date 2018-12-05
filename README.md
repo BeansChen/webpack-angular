@@ -1,5 +1,8 @@
 # webpack-angular
-> 使用webpack打包angular的例子
+此前用angularJS很长一点时间了，但一直没有使用过什么构建工具或者是模块化打包工具，
+随着es6的到来，webpack的火热，因此有了改变架构方案的念头，此项目为angularJS的模块化方案，
+脚手架根据vue-cli改写。
+
 
 ## 下载
 

@@ -10,10 +10,28 @@ require('./style/common.css');
 require('./plugins/bootstrap/dist/js/bootstrap.min.js');
 require('./plugins/bootstrap/dist/js/ui-bootstrap-tpls-2.2.0.min.js');
 /*dev*/
-require('./config/directive')(Angular);
-require('./config/filter')(Angular);
-require('./config/service')(Angular);
+require('./config/core');
+require('./config/directive');
+require('./config/filter');
+require('./config/service');
+/* module*/
+require('./views/main/main.module')
+require('./views/leaveMessage/leaveMessage.module')
+require('./views/technology/technology.module')
+require('./views/archive/archive.module')
+require('./views/homePage/homePage.module')
+require('./views/aboutMe/aboutMe.module')
 
-const Starter = Angular.module('starter', ['ui.router', 'oc.lazyLoad','ui.bootstrap','starter.service','starter.filter','starter.directive']);
+const Starter = Angular.module('starter', [
+    'starter.core',
+    'starter.service',
+    'starter.filter',
+    'starter.directive',
+    'starter.main',
+    'starter.leaveMessage',
+    'starter.homePage',
+    'starter.archive',
+    'starter.aboutMe',
+    'starter.technology'
+]);
 require('./config/config')(Starter, Angular);
- 

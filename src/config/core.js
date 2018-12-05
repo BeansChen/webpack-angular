@@ -1,0 +1,1 @@
+const StarterCore = angular.module('starter.core', ['ui.router', 'oc.lazyLoad', 'ui.bootstrap']);
