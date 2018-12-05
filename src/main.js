@@ -14,6 +14,7 @@ require('./config/core');
 require('./config/directive');
 require('./config/filter');
 require('./config/service');
+require('./config/value');
 /* module*/
 require('./views/main/main.module')
 require('./views/leaveMessage/leaveMessage.module')
@@ -23,10 +24,13 @@ require('./views/homePage/homePage.module')
 require('./views/aboutMe/aboutMe.module')
 
 const Starter = Angular.module('starter', [
+    // common
     'starter.core',
     'starter.service',
     'starter.filter',
     'starter.directive',
+    'starter.value',
+    // module
     'starter.main',
     'starter.leaveMessage',
     'starter.homePage',
@@ -35,3 +39,18 @@ const Starter = Angular.module('starter', [
     'starter.technology'
 ]);
 require('./config/config')(Starter, Angular);
+Starter.provider("myProvider",function(){
+    var name=0;
+    this.getName = function(n){
+        name = n;
+    }
+    this.$get = function(){
+        return {
+            name:"bean",
+            height:"175cm"
+        }
+    }
+})
+Starter.config(function(myProviderProvider){
+    console.log(myProviderProvider,"的")
+})

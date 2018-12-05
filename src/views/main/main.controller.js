@@ -1,7 +1,10 @@
-angular.module('starter.main', []).controller('mainController', ['testAc', '$q', '$scope', function (testAc, $q, $scope) {
-	console.log(testAc)
+var StarterCore = require('../../config/value')
+console.log(StarterCore)
+StarterCore.value("version",'1.11');
+
+angular.module('starter.main').controller('mainController', ['version', function (version) {
 	let vm = this;
-	vm.title = '登录页面';
+	vm.version = version;
 	vm.pets = [{
 		name: '张三'
 	},

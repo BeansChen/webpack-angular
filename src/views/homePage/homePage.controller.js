@@ -1,5 +1,5 @@
-angular.module('starter.homePage', []).controller('homePageController', ['testAc', '$q', '$scope', function (testAc, $q, $scope) {
-	console.log(testAc)
+angular.module('starter.homePage').controller('homePageController', ['version', function (version) {
+	console.log(version)
 	let vm = this;
 	vm.title = '登录页面';
 	vm.pets = [{
