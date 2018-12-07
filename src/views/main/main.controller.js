@@ -1,7 +1,3 @@
-var StarterCore = require('../../config/value')
-console.log(StarterCore)
-StarterCore.value("version",'1.11');
-
 angular.module('starter.main').controller('mainController', ['version', function (version) {
 	let vm = this;
 	vm.version = version;
